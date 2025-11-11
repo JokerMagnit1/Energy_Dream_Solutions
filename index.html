@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Dream Solutions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #1e293b;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    header img {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+      filter: brightness(0.5);
+      transition: transform 1.5s ease;
+    }
+    header img:hover {
+      transform: scale(1.05);
+    }
+    header .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: fadeInDown 1.5s ease forwards;
+      opacity: 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    @keyframes fadeInDown {
+      to { opacity: 1; transform: translate(-50%, -50%) translateY(0); }
+      from { opacity: 0; transform: translate(-50%, -50%) translateY(-20px); }
+    }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #f97316;
+      border-left: 6px solid #f97316;
+      padding-left: 10px;
+      margin-top: 2rem;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+      from { opacity: 0; }
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.8rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+    ul li:hover {
+      transform: translateX(5px);
+      background-color: #fef3f2;
+    }
+    ul li img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+    ul li:hover img {
+      transform: scale(1.2);
+    }
+    .image-block {
+      width: 100%;
+      margin: 2rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+    .image-block.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .image-block img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      display: block;
+      transition: transform 1.5s ease;
+    }
+    .image-block img:hover {
+      transform: scale(1.05);
+    }
+    .contact {
+      background-color: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+    .contact.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1e293b;
+      color: #e2e8f0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1920&q=80" alt="Электромонтаж на объекте">
+    <div class="title">
+      <h1>Energy Dream Solutions</h1>
+      <p>Электромонтаж и пусконаладка до и выше 1000 В</p>
+    </div>
+  </header>  <section>
+    <h2>О компании</h2>
+    <p>Energy Dream Solutions — это команда инженеров и специалистов с многолетним опытом в сфере энергетики и промышленной автоматизации. Мы выполняем полный цикл электромонтажных и пусконаладочных работ на объектах любого уровня сложности: от торговых центров и заводов до энергетических подстанций. Все работы проводятся с соблюдением ПУЭ, ГОСТ и норм электробезопасности.</p>
+    <p>Мы ценим качество, безопасность и сроки. Наши специалисты обладают действующими допусками до и выше 1000 В и проходят регулярное повышение квалификации. Благодаря этому клиенты получают надёжный результат, соответствующий самым высоким стандартам отрасли.</p><div class="image-block">
+  <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1920&q=80" alt="Электромонтаж кабельных линий">
+</div>
+
+<h2>Выполняемые работы</h2>
+<ul>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/1239/1239535.png" alt="Иконка схемы"><strong>Проектирование и разработка схем:</strong> силовые схемы, щитовое оборудование, КИПиА, системы автоматизации и диспетчеризации.</li>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910765.png" alt="Иконка монтаж"><strong>Электромонтажные работы:</strong> монтаж кабельных трасс, прокладка силовых линий, установка трансформаторов, заземление и молниезащита.</li>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910733.png" alt="Иконка настройка"><strong>Пусконаладочные работы:</strong> настройка автоматики, проверка релейной защиты, испытания оборудования и контроль параметров сети.</li>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910713.png" alt="Иконка диагностика"><strong>Обслуживание и диагностика:</strong> тепловизионный контроль, плановая профилактика, составление актов и технических отчётов.</li>
+</ul>
+
+<div class="image-block">
+  <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1920&q=80" alt="Электротехническое оборудование">
+</div>
+
+<h2>Наши принципы</h2>
+<p>Мы верим, что энергетика — это сердце любой инфраструктуры. Каждый кабель, каждый щит и каждая схема должны работать безупречно. Поэтому мы уделяем внимание каждой детали, от выбора оборудования до финальных испытаний. </p>
+<p>Energy Dream Solutions стремится к долгосрочным отношениям с клиентами. Мы не просто выполняем заказы — мы строим надёжные системы, на которых держится производство, бизнес и комфорт.</p>
+
+<div class="image-block">
+  <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=1920&q=80" alt="Инженеры Energy Dream Solutions">
+</div>
+
+<h2>Почему выбирают нас</h2>
+<ul>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910733.png" alt="Иконка допуск">Специалисты с действующими допусками до и выше 1000 В</li>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910765.png" alt="Иконка опыт">Опыт реализации проектов в энергетике, промышленности, торговле и ЖКХ</li>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910713.png" alt="Иконка ключ">Работаем «под ключ»: от проектирования до ввода в эксплуатацию</li>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910745.png" alt="Иконка гарантия">Официальная гарантия на все виды выполненных работ</li>
+  <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910703.png" alt="Иконка карта">Выезд и обслуживание по всему Узбекистану</li>
+</ul>
+
+<div class="image-block">
+  <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=1920&q=80" alt="Объекты Energy Dream Solutions">
+</div>
+
+<div class="contact">
+  <h2>Контакты</h2>
+  <p>📞 Телефон: <a href="tel:+998917768088" style="color:#f97316;text-decoration:none;">+998 91 776 80 88</a></p>
+  <p>Мы всегда готовы обсудить ваш проект, рассчитать стоимость и предложить оптимальные технические решения. Позвоните — и мы предложим вам надёжное энергорешение под ключ.</p>
+</div>
+
+  </section>  <footer>
+    <p>© 2025 Energy Dream Solutions. Все права защищены.</p>
+  </footer>  <script>
+    const sections = document.querySelectorAll('section');
+    const images = document.querySelectorAll('.image-block');
+    const contacts = document.querySelectorAll('.contact');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+    images.forEach(img => observer.observe(img));
+    contacts.forEach(contact => observer.observe(contact));
+  </script></body>
+</html>
