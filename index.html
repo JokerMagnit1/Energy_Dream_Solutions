@@ -20,8 +20,7 @@
     }
     header img {
       width: 100%;
-      height: auto;
-      max-height: 60vh;
+      height: 60vh;
       object-fit: cover;
       filter: brightness(0.5);
       transition: transform 1.5s ease;
@@ -113,8 +112,7 @@
     }
     .image-block img {
       width: 100%;
-      height: auto;
-      max-height: 350px;
+      height: 350px;
       object-fit: cover;
       display: block;
       transition: transform 1.5s ease;
@@ -142,22 +140,30 @@
       color: #e2e8f0;
       margin-top: 3rem;
     }
-    @media (max-width: 768px) {
-  header h1 { font-size: 1.8rem; }
-  header p { font-size: 1rem; }
-  section { padding: 0 0.5rem; }
-  ul li { flex-direction: column; align-items: flex-start; }
-  ul li img { margin-bottom: 5px; }
+    .eds-avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.eds-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
   </style>
 </head>
 <body>
   <header>
     <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1920&q=80" alt="Электромонтаж на объекте">
-    <div class="title">
-      <h1>Energy Dream Solutions</h1>
-      <p>Электромонтаж и пусконаладка до и выше 1000 В</p>
-    </div>
+     <div class="title">
+  <div class="eds-avatar-wrapper">
+    <img class="eds-avatar" src="avatar.jpg" alt="EDS Avatar">
+  </div>
+  <h1>Energy Dream Solutions</h1>
+</div>
   </header>  <section>
     <h2>О компании</h2>
     <p>Energy Dream Solutions — это команда инженеров и специалистов с многолетним опытом в сфере энергетики и промышленной автоматизации. Мы выполняем полный цикл электромонтажных и пусконаладочных работ на объектах любого уровня сложности: от торговых центров и заводов до энергетических подстанций. Все работы проводятся с соблюдением ПУЭ, ГОСТ и норм электробезопасности.</p>
@@ -200,6 +206,7 @@
 
 <div class="contact">
   <h2>Контакты</h2>
+  <p>📞 Телефон: <a href="tel:+998917768088" style="color:#f97316;text-decoration:none;">+998 98 333 27 23</a></p>
   <p>📞 Телефон: <a href="tel:+998917768088" style="color:#f97316;text-decoration:none;">+998 91 776 80 88</a></p>
   <p>Мы всегда готовы обсудить ваш проект, рассчитать стоимость и предложить оптимальные технические решения. Позвоните — и мы предложим вам надёжное энергорешение под ключ.</p>
 </div>
